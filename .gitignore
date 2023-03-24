@@ -1,6 +1,6 @@
 SECRET_KEY/
 TTS/
-speech audio/
-output audio/
+input audio/
+output/
 venv/
 *.DS_Store
