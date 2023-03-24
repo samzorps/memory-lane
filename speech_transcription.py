@@ -31,7 +31,7 @@ def transcribe_gcs(gcs_uri):
         #speech_contexts=, 
         #enable_word_time_offsets=, 
         #alternative_language_codes="",
-        #audio_channel_count=2,
+        audio_channel_count=2,
         enable_automatic_punctuation=True,
         language_code="en-US",
 
@@ -59,16 +59,24 @@ def transcribe_gcs(gcs_uri):
 # Google cloud authentication, uses enviornment variable set in setup
 client = datastore.Client()
 
-# example file 
-gcloud_example_audio = "gs://cloud-samples-data/speech/brooklyn_bridge.flac"
-
-# example from storycorps in storage
-bonnie_runnels_example_audio = "gs://test_audio_memory_lane/BonnieRunnels.flac"
-
 def gcloud_example_audio_test():
+    # example file 
+    gcloud_example_audio = "gs://cloud-samples-data/speech/brooklyn_bridge.flac"
     res = transcribe_gcs(gcloud_example_audio)
     return res
 
 def bonnie_runnels_audio_test():
+    # example from storycorps in storage
+    bonnie_runnels_example_audio = "gs://test_audio_memory_lane/BonnieRunnels.flac"
     res = transcribe_gcs(bonnie_runnels_example_audio)
     return res
+
+def bonnie_clyde_trudy_henry_test():
+    # 6 min, one speaker audio from storycorps
+    res = transcribe_gcs("gs://test_audio_memory_lane/bonnie_clyde_by_Trudy_Henry.flac")
+    with open('outfile.txt', 'w') as outfile:
+        print >>outfile, res
+    return res
+
+bonnie_clyde_trudy_henry_test()
+
