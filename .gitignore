@@ -4,3 +4,4 @@ input audio/
 output/
 venv/
 *.DS_Store
+other/
