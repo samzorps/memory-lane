@@ -31,7 +31,7 @@ def transcribe_gcs(gcs_uri):
         #speech_contexts=, 
         #enable_word_time_offsets=, 
         #alternative_language_codes="",
-        audio_channel_count=2,
+        #audio_channel_count=2,
         enable_automatic_punctuation=True,
         language_code="en-US",
 
@@ -78,5 +78,10 @@ def bonnie_clyde_trudy_henry_test():
         print >>outfile, res
     return res
 
-bonnie_clyde_trudy_henry_test()
+def invisible_man_test():
+    gcs = "gs://test_audio_memory_lane/invisible_man_01-02_wells_64kb.flac"
+    res = transcribe_gcs(gcs)
+    return res
+
+invisible_man_test()
 

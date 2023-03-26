@@ -42,8 +42,8 @@ def test_great_gatsby():
     YourTTS(text_to_read, speech_to_mimic, location_to_save_output)
 
 def test_the_invisible_man():
-    text_to_read = "Chapter 1: The novel begins with an unnamed stranger arriving at the Coach and Horses Inn in Iping, a small town in Sussex, England. The stranger is wrapped in bandages and wears a hat and goggles to conceal his face. He takes a room at the inn and begins conducting strange experiments in his room. The innkeeper's wife, Mrs. Hall, becomes suspicious of the stranger's behavior and tries to investigate. However, the stranger becomes violent and refuses to reveal his identity or the nature of his experiments.\
-                    Chapter 2: The next morning, the stranger is still in his room and refuses to come out. Mrs. Hall brings him breakfast, but he throws it against the wall. She also notices that his clothes and bandages are covered in blood. Eventually, the stranger comes out of his room and reveals that he has made himself invisible through a scientific experiment. He tells Mrs. Hall that he needs to conduct further experiments to reverse the process and become visible again."
+    text_to_read = "This story is about a mysterious stranger who arrives at Mrs. Hole's Inn and is bandaged from head to toe, \
+but it is eventually revealed that his mouth and face were disfigured in an accident. He is polite and reserved, but Mrs. Hole notices his sensitivity about the accident."
     speech_to_mimic = "/Users/samzorpette/Desktop/memory lane/input audio/invisible_man_01-02_wells_64kb.mp3"
     location_to_save_output = "/Users/samzorpette/Desktop/memory lane/output/the_invisible_man_test3/out.wav"
     YourTTS(text_to_read, speech_to_mimic, location_to_save_output)
