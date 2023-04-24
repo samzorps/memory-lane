@@ -4,7 +4,7 @@ SETUP: set openai.api_key_path to the path to the file which contains the api ke
 import os
 import openai
 
-openai.api_key_path = "/Users/samzorpette/Desktop/memory lane/SECRET_KEY/openai.txt"
+openai.api_key_path = "PATH/TO/SECRET_KEY/openai.txt"
 
 def summarize(text):
     response = openai.Completion.create(
