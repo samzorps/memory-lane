@@ -7,7 +7,7 @@ This is a machine learning pipeline which inputs spoken audio of a story and gen
 This takes an audio file, transcribes it using Google Cloud speech-to-text, summarizes the transcript and generates conversational follow up questions using ChatGPT, and clones the speakers voice using the YourTTS model from 🐸TTS. 
 
 ## Why it was made
-It was made for [memory-lane.ai](memory-lane.ai) as a minimum-viable-product. It gut-checked the feasability and cost of what they wanted to do, and helped raise their seed round. 
+It was made for [memory-lane.ai](memory-lane.ai) as a minimum-viable-product (MVP) for their core product. It gut-checked the feasability and cost of what they wanted to do, and helped raise their seed round. 
 
 ## Read also: 
 - model for voice cloning https://github.com/coqui-ai/tts 
