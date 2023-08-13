@@ -1,7 +1,7 @@
 # Memory Lane 
 
 ## What it does
-This is a machine learning pipeline which inputs spoken audio of a story and generates follow up questions about the story. It also will clone the speakers voice. 
+This is a machine learning pipeline which inputs spoken audio of a story and generates follow up questions about the story. It also will clone the speakers voice and read back a summary of their story with the cloned voice.
 
 ## How it works
 This takes an audio file, transcribes it using Google Cloud speech-to-text, summarizes the transcript and generates conversational follow up questions using ChatGPT, and clones the speakers voice using the YourTTS model from 🐸TTS. 
