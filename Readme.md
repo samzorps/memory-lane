@@ -13,9 +13,7 @@ It was made for [memory-lane.ai](memory-lane.ai) as a minimum-viable-product (MV
 
 
 ## Instructions for use
-1. Activate virtual enviornment 
-Open a terminal and type the following command:
-source venv/bin/activate
+1. Activate virtual enviornment. Open a terminal and type the following command: source venv/bin/activate
 
 2. Authenticate Google Cloud 
 - Setup service account and download private key json file
@@ -27,7 +25,7 @@ export GOOGLE_APPLICATION_CREDENTIALS="/path/to/keyfile.json"
 - Example: openai.api_key_path = "path/to/secret_key/openai.txt"
 
 4. Run main.py
-- change the variables in main.py to the audio file you would like to use (Local or in Google Cloud) and run main.py
+- change the variable in main.py to the audio file you would like to use (Local or in Google Cloud) and run main.py
 
 ## Read also: 
 - model for voice cloning https://github.com/coqui-ai/tts 
